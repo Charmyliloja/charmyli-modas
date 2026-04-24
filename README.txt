@@ -1,0 +1,1 @@
+Projeto demo Charmyli Modas. Publique index.html na Vercel ou outro host estático.

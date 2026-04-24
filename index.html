@@ -1,1 +1,12 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Charmyli Modas</title><link rel="stylesheet" href="style.css"></head><body><header><h1>Charmyli Modas</h1><p>Painel de Pedidos</p></header><main><section class="card"><h2>Importar Excel/CSV</h2><input type="file"></section><section class="card"><h2>Atualizar Pedido</h2><input id="pedido" placeholder="Número do pedido"><input id="entrega" placeholder="Data entrega"><select id="status"><option>Em aberto</option><option>Entregue</option><option>Faltando peças</option></select><button onclick="salvarStatus()">Salvar</button></section><section class="card"><h2>Buscar Pedido</h2><input id="busca"><button onclick="buscar()">Buscar</button><pre id="resultado"></pre></section></main><script src="script.js"></script></body></html>
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Charmyli Modas</title>
+<style>body{font-family:Arial;background:#f5efe6;padding:20px}h1{color:#7a5c3e}.card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08)}input,button{padding:8px;margin:4px}</style></head>
+<body><h1>Charmyli Modas - Painel de Pedidos</h1>
+<div class='card'>
+<input id='file' type='file' accept='.csv,.xlsx,.xls'><button onclick='alert("Versão demo: use CSV para testes")'>Importar</button>
+<p>Busca Pedido: <input id='q'><button onclick='buscar()'>Buscar</button></p>
+<div id='out'></div></div>
+<script>
+let pedidos=[]
+function buscar(){let q=document.getElementById('q').value;document.getElementById('out').innerText='Pedido '+q+' (cadastre/importe dados na versão completa).'}
+</script></body></html>
