@@ -1,0 +1,1 @@
+body{font-family:Arial;background:#f5efe6;margin:0}header{background:#d9c3a5;padding:20px;text-align:center}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;padding:16px}.card{background:#fff;padding:16px;border-radius:12px}input,select,button{width:100%;padding:10px;margin:6px 0}
